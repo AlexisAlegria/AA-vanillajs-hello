@@ -20,12 +20,13 @@ window.onload = function() {
   ];
   var aleatorio = Math.floor(Math.random() * 4);
   console.log(
-    who[aleatorio] +
+    (document.getElementById("excuse").innerHTML =
+      who[aleatorio] +
       " " +
       action[aleatorio] +
       " " +
       what[aleatorio] +
       " " +
-      when[aleatorio]
+      when[aleatorio])
   );
 };
