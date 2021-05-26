@@ -20,13 +20,23 @@ window.onload = function() {
   ];
   var aleatorio = Math.floor(Math.random() * 4);
   console.log(
-    (document.getElementById("excuse").innerHTML =
-      who[aleatorio] +
+    who[aleatorio] +
       " " +
       action[aleatorio] +
       " " +
       what[aleatorio] +
       " " +
-      when[aleatorio])
+      when[aleatorio]
   );
 };
+
+let parrafo = document.getElementById("excuse");
+
+parrafo.innerHTML =
+  who[aleatorio] +
+  " " +
+  action[aleatorio] +
+  " " +
+  what[aleatorio] +
+  " " +
+  when[aleatorio];
