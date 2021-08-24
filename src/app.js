@@ -18,15 +18,17 @@ window.onload = function() {
     "during my lunch",
     "while I was praying"
   ];
-  var aleatorio = Math.floor(Math.random() * 4);
-  console.log(
-    (document.getElementById("excuse").innerHTML =
-      who[aleatorio] +
-      " " +
-      action[aleatorio] +
-      " " +
-      what[aleatorio] +
-      " " +
-      when[aleatorio])
-  );
+  var aleatorio1 = Math.floor(Math.random() * 4);
+  var aleatorio2 = Math.floor(Math.random() * 4);
+  var aleatorio3 = Math.floor(Math.random() * 3);
+  var aleatorio4 = Math.floor(Math.random() * 5);
+
+  document.getElementById("excuse").innerHTML =
+    who[aleatorio1] +
+    " " +
+    action[aleatorio2] +
+    " " +
+    what[aleatorio3] +
+    " " +
+    when[aleatorio4];
 };
